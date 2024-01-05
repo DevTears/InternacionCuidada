@@ -1,3 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(to bottom, rgb(218, 255, 249), rgb(255, 255, 255));
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #30bc6d;
+    border-radius: 6px; 
+    border: 2px solid #f5f5f5; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #22894f;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #25d366;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .whatsapp-button:hover .whatsapp-tooltip {
+    display: block;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-to-top span {
+    font-size: 20px;
+    line-height: 1;
+  }
+  
+  
+
+
+.titulo-seccion {
+    font-weight: 700;
+}
 .social-icon {
-    margin-right:20px; /* Puedes ajustar el valor según sea necesario */
+    margin-right:20px;
+}
+
+@media (min-width: 768px) {
+    .carousel-image {
+        width: 1296px;
+        height: 400px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -100px;
+    z-index: 1; /* Asegurar que esté encima del contenido */
+}
+
+.swiper-button-next {
+    right: 10; /* Ajustar posición del botón derecho */
+}
+
+/* Estilos personalizados para botones activos */
+.boton-con-imagen.active,
+.boton-con-imagen:active {
+    background-color: red;
+    border-color: red;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.circle-icon {
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 15px; /* Espacio entre círculos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos generales para pantallas grandes */
+.img-relleno {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Ajuste específico para pantallas más pequeñas (menos de 990px) */
+@media (max-width: 990px) {
+    .img-relleno {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.boton-con-imagen {
+    background-color: rgb(87, 188, 227);
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); 
+}
+
+.boton-con-imagen:hover {
+    background-color: rgba(74, 155, 161, 0.8);
+}
+
+.footer {
+    background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 229, 207));
+}
+
+.social-icon {
+    color: rgb(61, 224, 129);
+}
+
+.titulo-carta {
+    font-weight: 500;
 }
