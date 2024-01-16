@@ -3,7 +3,11 @@
 body {
     overflow-x: hidden;
     font-family: 'DM Sans', sans-serif;
-    background: linear-gradient(to bottom, rgb(218, 255, 249), rgb(255, 255, 255));
+    background: white
+}
+
+.carta {
+ background-color:rgb(218, 255, 249)
 }
 
 /* Estilo para la barra de desplazamiento */
@@ -25,6 +29,10 @@ body {
     background-color: #22894f;
 }
 
+.navbar {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(218, 255, 249));
+}
+
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -38,9 +46,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .whatsapp-tooltip {
+    z-index: 1;
+}
+
+.whatsapp-tooltip {
     display: none;
     position: absolute;
     bottom: 60px;
@@ -50,50 +59,18 @@ body {
     color: #fff;
     padding: 8px;
     border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .whatsapp-button:hover .whatsapp-tooltip {
-    display: block;
-  }
-  
-  .scroll-to-top {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background-color: #25d366;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .scroll-to-top span {
-    font-size: 20px;
-    line-height: 1;
-  }
-  
-  
+    font-size: 11px;
+}
 
+.whatsapp-button:hover .whatsapp-tooltip {
+    display: block;
+}
 
 .titulo-seccion {
     font-weight: 700;
 }
 .social-icon {
     margin-right:20px;
-}
-
-@media (min-width: 768px) {
-    .carousel-image {
-        width: 1296px;
-        height: 400px;
-    }
 }
 
 .swiper-button-next,
@@ -128,8 +105,8 @@ body {
 /* Estilos personalizados para botones activos */
 .boton-con-imagen.active,
 .boton-con-imagen:active {
-    background-color: red;
-    border-color: red;
+    background-color: #5EA097;
+    border-color: #5EA097;
 }
 
 .map-container {
@@ -195,7 +172,7 @@ body {
 }
 
 .boton-con-imagen {
-    background-color: rgb(87, 188, 227);
+    background-color: rgb(218, 255, 249);
     background-size: cover;
     background-position: center;
     color: rgb(0, 0, 0); 
@@ -209,14 +186,21 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
-.navbar {
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(218, 255, 249));
-}
+
 
 .social-icon {
-    color: rgb(61, 224, 129);
+    color: rgb(0, 0, 0);
 }
 
 .titulo-carta {
     font-weight: 500;
 }
+
+.foto-con-filtro-azul {
+    filter: brightness(70%) sepia(100%) hue-rotate(190deg);
+}
+
+
+.coloreado {
+    background-color: #5EA097;
+}   
