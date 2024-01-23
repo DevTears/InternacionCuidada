@@ -110,26 +110,27 @@ $(document).ready(function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    var scrollButton = document.querySelector(".scroll-to-top");
-  
-    // Muestra u oculta el botón según la posición de desplazamiento
-    window.onscroll = function () {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollButton.style.display = "block";
-      } else {
-        scrollButton.style.display = "none";
-      }
-    };
-  });
-  
-  // Función para desplazarse hacia arriba al hacer clic en el botón
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-  }
-  
 // Función para abrir WhatsApp al hacer clic en el botón
 function openWhatsApp() {
     window.open('https://wa.me/123456789', '_blank');
-  }
+}
+
+function copiarAlPortapapeles(event) {
+    event.preventDefault();
+    var textoACopiar = "info@internacioncuidada.com";
+    var elementoTemporal = document.createElement("textarea");
+    elementoTemporal.value = textoACopiar;
+    document.body.appendChild(elementoTemporal);
+    elementoTemporal.select();
+    document.execCommand("copy");
+    document.body.removeChild(elementoTemporal);
+    mostrarMensajeCopiado();
+}
+
+function mostrarMensajeCopiado() {
+    var mensaje = document.getElementById("copiadoMensaje");
+    mensaje.style.display = "block";
+    setTimeout(function() {
+        mensaje.style.display = "none";
+    }, 2000);
+}
