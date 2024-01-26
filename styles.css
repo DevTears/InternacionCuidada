@@ -77,25 +77,18 @@ body {
     margin-right:20px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: white;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-top: -20px;
-}
-
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #5EA097;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
     color: rgb(0, 0, 0);
     font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -100px;
@@ -166,6 +159,10 @@ body {
     .img-relleno {
         width: 100%;
         height: auto;
+    }
+
+    carrusel-inicio {
+        height: 100px;
     }
 }
 
