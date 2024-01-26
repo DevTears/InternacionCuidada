@@ -98,8 +98,9 @@ function cargarNoticias() {
                 noticiasContainer.append(tarjeta);
             });
         },
-        error: function (error) {
+        error: function (xhr, status, error) {
             console.error('Error al obtener noticias:', error);
+            console.log('Detalles del error:', xhr);
         }
     });
 }
