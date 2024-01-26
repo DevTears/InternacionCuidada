@@ -162,6 +162,14 @@ body {
     }
 }
 
+/* Ajuste específico para pantallas más pequeñas (menos de 990px) */
+@media (max-width: 1366px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
 .boton-info {
     background-color: rgb(255, 255, 255);
     background-size: cover;
