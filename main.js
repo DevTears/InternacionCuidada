@@ -99,8 +99,10 @@ function cargarNoticias() {
             });
         },
         error: function (xhr, status, error) {
+            console.log('Código de estado HTTP:', xhr.status);
             console.error('Error al obtener noticias:', error);
             console.log('Detalles del error:', xhr);
+            console.log('Respuesta completa del servidor:', xhr.responseText);
         }
     });
 }
