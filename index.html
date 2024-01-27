@@ -182,11 +182,8 @@
             <div class="collapse mt-3" id="boton3Content">
                 <div class="container container-contenido" style="max-width: 100%;">
                     <div class="col-md-12 text-center">
-                        <h2 class="titulo-seccion">Origen</h2>
-                        <p class="fs-5" style="text-align: justify;">Nacimos bajo el concepto de <b>CALIDAD EN NUESTRAS PRESTACIONES.</b> Calidad que expresamos en el cuidado de nuestros pacientes, quienes depositan en nosotros su <b>TRATAMIENTO DE RECUPERACIÓN,</b> en la familiaridad de su <b>HOGAR.</b></p>
-                        <p class="fs-5" style="text-align: justify;"><b>NUESTRO OBJETIVO PRIMORDIAL</b> es la <b>PLENA SATISFACCIÓN</b> de nuestros pacientes. Nos <b>PREPARAMOS CON ESMERO</b> cada jornada, asegurándonos de contar con todos los <b>RECURSOS NECESARIOS</b> para ofrecer prestaciones de calidad inigualable. Ponemos especial énfasis en atender a pacientes que, debido a su patología, demandan un <b>SERVICIO PROFESIONAL, COMPROMETIDO</b> y <b>DEDICADO al CUIDADO</b> y <b>MEJORAMIENTO</b> de su salud, directamente en el seno de su hogar.</p>
-                        <p class="fs-5" style="text-align: justify;">Reconocemos la <b>IMPORTANCIA CAPITAL</b> del <b>APOYO FAMILIAR</b>, un eslabón fundamental para la pronta recuperación del enfermo. La <b>COORDINACIÓN</b> precisa entre la familia y nuestra empresa se erige como una <b>CLAVE INDISPENSABLE</b> para proporcionar un servicio <b>INTERDISCIPLINARIO</b> de <b>VALOR EXCEPCIONAL</b> para el paciente.</p>
-                        <p class="fs-5" style="text-align: justify;">Hoy en día, <b>EXTENDEMOS NUESTROS CUIDADOS DOMICILIARIOS</b> a pacientes en Mendoza y San Juan, manteniendo <b>SIEMPRE LOS MAYORES ESTÁNDARES DE CALIDAD</b> del mercado. Nos enorgullece ser pioneros en brindar atención excepcional que no solo satisface, sino que supera las expectativas de quienes confían en nosotros para su bienestar.</p>
+                        <h2 class="titulo-seccion">Centro Médico IC Bombal</h2>
+                        <p class="fs-5" style="text-align: justify;">Contamos con un centro médico ambulatorio, ubicado en el <b>Barrio Bombal</b> del departamento de Godoy Cruz, en el cual podemos desarrollar <b>TAREAS DE ATENCION MÉDICA</b> y <b>REHABILITACIÓN AMBULATORIA.</b>
                     </div>
                 </div>
             </div>
@@ -245,7 +242,7 @@
     </div>
     
     <!-- Sección Quiénes Somos -->
-    <div id="cobertura_seccion" class="container mt-2 " data-aos="fade-up" data-aos-duration="1000">
+    <div class="container mt-2 " data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
             <div class="col-md-6">
                 <!-- Imagen a la izquierda -->
@@ -255,7 +252,7 @@
                 <!-- Sección de color -->
                 <div class="rounded border p-4 h-100 d-flex flex-column coloreado">
                     <h2 class="titulo-seccion text-white">Quiénes Somos</h2>
-                    <p class="text-white fs-5" style="text-align: justify;">
+                    <p id="cobertura_seccion" class="text-white fs-5" style="text-align: justify;">
                         Nos especializamos en
                         atender a pacientes con
                         patologías que demandan
@@ -300,31 +297,53 @@
             <div class="row justify-content-center mx-auto">
                 <div class="col-md-4 mb-4">
                     <div class="card mx-auto tarjeta-cobertura" style="width: 18rem; height: 100%;">
-                        <img src="src/CoberturaNiñoYAdo.jpg" class="foto-con-filtro-azul card-img-top" alt="Niños y Adolescentes">
+                        <img id="img-ninos" src="src/CoberturaNiñoYAdo.jpg" class="foto-con-filtro-azul card-img-top" alt="Niños y Adolescentes">
                         <div class="card-img-overlay d-flex flex-column justify-content-start">
                             <h5 class="titulo-seccion text-white">Niños y Adolescentes</h5>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-mostrar-mas" data-target="seccion-ninos">Mostrar Más</button>
+                    </div>
                 </div>
                 
                 <div class="col-md-4 mb-4">
                     <div class="card mx-auto tarjeta-cobertura" style="width: 18rem; height: 100%;">
-                        <img src="src/CoberturaAdultos.jpg" class="foto-con-filtro-azul card-img-top" alt="Adultos">
+                        <img id="img-adultos" src="src/CoberturaAdultos.jpg" class="foto-con-filtro-azul card-img-top" alt="Adultos">
                         <div class="card-img-overlay d-flex flex-column justify-content-start">
                             <h5 class="titulo-seccion text-white">Adultos</h5>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-mostrar-mas" data-target="seccion-adultos">Mostrar Más</button>
+                    </div>
                 </div>
                 
                 <div class="col-md-4 mb-4">
                     <div class="card mx-auto tarjeta-cobertura" style="width: 18rem; height: 100%;">
-                        <img src="src/CoberturaMaquinaria.jpg" class="foto-con-filtro-azul card-img-top" alt="Insumos Médicos">
+                        <img id="img-insumos" src="src/CoberturaMaquinaria.jpg" class="foto-con-filtro-azul card-img-top" alt="Insumos Médicos">
                         <div class="card-img-overlay d-flex flex-column justify-content-start">
                             <h5 class="titulo-seccion text-white">Insumos Médicos</h5>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-mostrar-mas" data-target="seccion-insumos">Mostrar Más</button>
+                    </div>
                 </div>
+                <div id="seccion-ninos" class="seccion-adicional">
+                    a
+                </div>
+                
+                <div id="seccion-adultos" class="seccion-adicional">
+                    b
+                </div>
+                
+                <div id="seccion-insumos" class="seccion-adicional">
+                    c
+                </div>
+                
             </div>
+            
         </div>
     </div>
     
@@ -381,7 +400,7 @@
             <div class="col-md-6">
                 <!-- Sección de color plano con título y descripción y altura del 100% -->
                 <div class="rounded border p-4 h-100 d-flex flex-column coloreado">
-                    <h2 class="titulo-seccion text-white">Quiénes Somos</h2>
+                    <h2 class="titulo-seccion text-white">Centro Médico IC Bombal</h2>
                     <p class="text-justify text-white">
                         Internación Cuidada es una empresa comprometida con la excelencia en el cuidado de la salud. Desde nuestros inicios, nos dedicamos a proporcionar servicios médicos de calidad con un enfoque centrado en el paciente. Nuestra misión es ofrecer atención integral y compasiva, garantizando la comodidad y el bienestar de nuestros pacientes.
                     </p>
@@ -453,7 +472,7 @@
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
         <div class="elfsight-app-58f27514-2121-4d4a-b34a-3a161bafa3aa container" data-elfsight-app-lazy></div>
     </div>
-
+    
     <div class="footer container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center mx-5 py-3 mt-3 border-top">
             <p class="col-md-4 mb-0 text-muted">© 2023 Internación Cuidada</p>
