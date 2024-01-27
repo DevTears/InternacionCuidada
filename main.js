@@ -57,61 +57,6 @@ function showContent(button) {
     }
 }
 
-// Función para cargar noticias
-function cargarNoticias() {
-    var apiKey = '660e9501be1c4e2cb35b2897fbb50e54';
-    var apiUrl = 'https://newsapi.org/v2/top-headlines';
-    var country = 'ar';
-    var category = 'health';
-
-    $.ajax({
-        url: apiUrl,
-        method: 'GET',
-        data: {
-            country: country,
-            category: category,
-            apiKey: apiKey
-        },
-        success: function (data) {
-            // Manejar la respuesta de la API y mostrar las noticias
-            var noticiasContainer = $('#noticiasContainer');
-
-            data.articles.slice(0, 4).forEach(function (article) {
-                // Verificar si hay una URL de imagen disponible
-                var imageUrl = article.urlToImage ? article.urlToImage : '/src/LogoIC.png';
-
-                // Crear la tarjeta de noticia
-                var tarjeta = `
-                    <div class="col-md-3">
-                        <div class="card d-flex flex-column h-100">
-                            <img src="${imageUrl}" class="card-img-top" alt="${article.title}">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">${article.title}</h5>
-                            </div>
-                            <div class="card-footer">
-                                <a href="${article.url}" target="_blank" class="btn btn-primary btn-block">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-                noticiasContainer.append(tarjeta);
-            });
-        },
-        error: function (xhr, status, error) {
-            console.log('Código de estado HTTP:', xhr.status);
-            console.error('Error al obtener noticias:', error);
-            console.log('Detalles del error:', xhr);
-            console.log('Respuesta completa del servidor:', xhr.responseText);
-        }
-    });
-}
-
-// Cargar noticias al cargar el documento
-$(document).ready(function () {
-    cargarNoticias();
-});
-
 
 // Función para abrir WhatsApp al hacer clic en el botón
 function openWhatsApp() {
@@ -137,3 +82,10 @@ function mostrarMensajeCopiado() {
         mensaje.style.display = "none";
     }, 2000);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var watermarkElement = document.querySelector('a[href="https://elfsight.com/instagram-feed-instashow/?utm_source=websites&utm_medium=clients&utm_content=instashow&utm_term=127.0.0.1&utm_campaign=free-widget"]');
+    if (watermarkElement) {
+        watermarkElement.style.display = "none";
+    }
+});
