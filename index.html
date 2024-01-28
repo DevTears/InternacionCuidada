@@ -91,7 +91,7 @@
                             <h5 class="card-title">Ubicación</h5>
                             <p class="card-text">
                                 <p>Vicente Zapata 132 Piso 3 Of. 17.</p>
-                                <p><i class="fas fa-map-marker-alt"></i><a href="#" target="_blank" class="mx-1">Ver En Mapa</a></p>
+                                <p><i class="fas fa-map-marker-alt"></i><a href="#mapaSedeCentral" class="mx-1">Ver En Mapa</a></p>
                             </p>
                         </div>
                     </div>
@@ -126,10 +126,10 @@
                 <h2 class="titulo-seccion">Navegación</h2>
                 <div class="container mb-2">
                     <div class="btn-group d-flex flex-wrap" role="group" aria-label="Basic example">
-                        <button type="button" class="boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton1Content" aria-expanded="false" aria-controls="boton1Content" onclick="toggleButton(this)">Origen</button>
-                        <button type="button" class="boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton2Content" aria-expanded="false" aria-controls="boton2Content" onclick="toggleButton(this)">Internación Cuidada</button>
-                        <button type="button" class="boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton3Content" aria-expanded="false" aria-controls="boton3Content" onclick="toggleButton(this)">Centro Médico IC Bombal</button>
-                        <button id="boton4" type="button" class="boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton4Content" aria-expanded="false" aria-controls="boton4Content" onclick="toggleButton(this)">Rehabilitación</button>
+                        <button type="button" class="col-2 boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton1Content" aria-expanded="false" aria-controls="boton1Content" onclick="toggleButton(this)">Origen</button>
+                        <button type="button" class="col-2 boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton2Content" aria-expanded="false" aria-controls="boton2Content" onclick="toggleButton(this)">Internación Cuidada</button>
+                        <button type="button" class="col-2 boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton3Content" aria-expanded="false" aria-controls="boton3Content" onclick="toggleButton(this)">Centro Médico IC Bombal</button>
+                        <button id="boton4" type="button" class="col-2 boton-info btn btn-block mx-1 text-dark mb-1" data-bs-toggle="collapse" data-bs-target="#boton4Content" aria-expanded="false" aria-controls="boton4Content" onclick="toggleButton(this)">Rehabilitación</button>
                     </div>
                 </div>  
             </div>
@@ -319,15 +319,15 @@
                         </div>
                     </div>
                 </div>
-                <p class="container-fluid bg-dark d-flex gap-5 justify-content-center gap-5">
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        VER MÁS
+                <p class="container-fluid d-flex justify-content-between gap-2">
+                    <a class="boton-info btn text-dark col-4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Niños y Adolescentes.
                     </a>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        VER MÁS
+                    <a class="boton-info btn text-dark col-4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Adultos
                     </a>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        VER MÁS
+                    <a class="boton-info btn text-dark col-4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Insumos médicos
                     </a>
                 </p>
                 
@@ -415,7 +415,7 @@
             </div>
             <div class="col-md-6">
                 <!-- Imagen a la derecha con altura del 100% -->
-                <img src="/src/CENTRO MEDICO BOMBAL.png" class="img-fluid h-100 rounded imagen-quienes-somos" alt="Imagen Quiénes Somos" />
+                <img id="mapaSedeCentral" src="/src/CENTRO MEDICO BOMBAL.png" class="img-fluid h-100 rounded imagen-quienes-somos" alt="Imagen Quiénes Somos" />
             </div>
         </div>
     </div>
