@@ -162,7 +162,7 @@ body {
     }
 }
 
-/* Ajuste específico para pantallas más pequeñas (menos de 990px) */
+/* Ajuste específico para pantallas más pequeñas (menos de 1336px) */
 @media (max-width: 1366px) {
     .swiper-button-next,
     .swiper-button-prev {
